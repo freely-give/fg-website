@@ -1,0 +1,83 @@
+.playlistContainer {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  max-width: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.audioPlayer {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.playlistInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.currentSong {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controlButton {
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlButton:hover:not(:disabled) {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.controlButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.controlButton.active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.controlButton.active:hover {
+  background-color: #bbdefb;
+  color: #1565c0;
+}
+
+.audioError {
+  color: #ff3860;
+  background-color: #feecf0;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}

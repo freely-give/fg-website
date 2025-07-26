@@ -1,0 +1,21 @@
+.audioContainer {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.audioPlayer {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.audioError {
+  color: #ff3860;
+  background-color: #feecf0;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  max-width: 500px;
+}
